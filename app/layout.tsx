@@ -214,6 +214,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
+<meta name="google-site-verification" content="vNN9ti6yXM87cCO212MjDeHKpT22DOJieV0KP5hivnc" />
+        
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F4JDS1FQL8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F4JDS1FQL8');
+</script>
+        
       </head>
       <body className={inter.className}>{children}</body>
     </html>
