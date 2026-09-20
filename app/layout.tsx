@@ -8,9 +8,9 @@ const SITE_URL = 'https://vinodkumaran.com';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: 'Vinod Kumaran — AI Visibility Strategist | Book a Meeting',
+  title: 'Best AEO and GEO Expert in Healthcare | Vinod Kumaran',
   description:
-    'Build AI visibility that compounds. 17+ years in organic search, AEO, GEO & AI Search. Book a meeting with Vinod Kumaran to make your brand discoverable across ChatGPT, Claude, Gemini & Perplexity.',
+    'I build visibility for brands in the age of AI — bringing together 17+ years of organic search, AEO, content and growth. One of the top pioneers adapting and executing AEO projects.',
   alternates: { canonical: SITE_URL },
   keywords: [
     'AI visibility',
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
     'growth systems',
   ],
   openGraph: {
-    title: 'Vinod Kumaran — Where High Intent Meets AI Visibility',
+    title: 'Best AEO and GEO Expert in Healthcare | Vinod Kumaran',
     description:
-      'Build visibility for brands in the age of AI. AEO, GEO, AI Search & high-intent growth strategy. Book a meeting today.',
+      'I build visibility for brands in the age of AI — bringing together 17+ years of organic search, AEO, content and growth. One of the top pioneers adapting and executing AEO projects.',
     url: SITE_URL,
     siteName: 'Vinod Kumaran',
     type: 'profile',
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Vinod Kumaran — Where High Intent Meets AI Visibility',
+    title: 'Best AEO and GEO Expert in Healthcare | Vinod Kumaran',
     description:
-      'Build visibility for brands in the age of AI. AEO, GEO, AI Search & high-intent growth strategy. Book a meeting today.',
+      'I build visibility for brands in the age of AI — bringing together 17+ years of organic search, AEO, content and growth. One of the top pioneers adapting and executing AEO projects.',
     images: ['/images/profile_image.png'],
   },
   robots: { index: true, follow: true, 'max-image-preview': 'large' },
@@ -52,16 +52,26 @@ const personSchema = {
   name: 'Vinod Kumaran',
   url: SITE_URL,
   image: `${SITE_URL}/images/profile_image.png`,
-  jobTitle: 'AI Visibility Strategist',
+  jobTitle: 'AEO & GEO Expert — AI Search Visibility Strategist',
   description:
-    'Digital strategist and AEO/GEO pioneer with 17+ years in organic search, AEO, content and growth. One of the top pioneers adapting and executing AEO projects. Helping complex brands become visible and discoverable across AI-powered search.',
+    'AEO and GEO expert specializing in AI Search visibility for Healthcare and Life Sciences. 17+ years in organic search, AEO, content and growth. One of the top pioneers adapting and executing AEO projects. Helping healthcare, diagnostics, biotechnology and precision medicine brands become visible and discoverable across AI-powered search.',
   knowsAbout: [
-    'AI Visibility',
+    'AI Search Visibility',
     'Answer Engine Optimization (AEO)',
     'Generative Engine Optimization (GEO)',
     'AI Search',
+    'Healthcare Digital Marketing',
+    'Life Sciences Marketing',
+    'Diagnostics Marketing',
+    'Biotechnology Marketing',
+    'Precision Medicine Marketing',
+    'Clinical Research Marketing',
+    'Pharmaceuticals Marketing',
+    'Medical Devices Marketing',
+    'Genomics Marketing',
+    'Proteomics Marketing',
+    'Scientific AI Marketing',
     'Organic SEO',
-    'Answer Engine Optimization (AEO)',
     'Search Engine Optimization (SEO)',
     'Content Strategy',
     'Growth Systems',
@@ -83,7 +93,13 @@ const personSchema = {
     name: 'Digital Marketing',
   },
   award: 'GEO Platform Builder',
-  slogan: 'Where high intent meets AI visibility.',
+  slogan: 'Building visibility where complexity lives.',
+  hasOccupation: {
+    '@type': 'Occupation',
+    name: 'AEO & GEO Expert — AI Search Visibility',
+    occupationLocation: { '@type': 'Country', name: 'Global' },
+    skills: ['AEO', 'GEO', 'AI Search Visibility', 'Healthcare Digital Marketing', 'Generative Search Optimization', 'Organic SEO', 'Content Strategy', 'Growth Systems'],
+  },
 };
 
 const websiteSchema = {
@@ -91,8 +107,8 @@ const websiteSchema = {
   '@type': 'WebSite',
   '@id': `${SITE_URL}/#website`,
   url: SITE_URL,
-  name: 'Vinod Kumaran — AI Visibility Strategist',
-  description: 'Building the next layer of digital visibility across AI search.',
+  name: 'Vinod Kumaran — Best AEO and GEO Expert in Healthcare',
+  description: 'AI Search visibility strategy for Healthcare and Life Sciences. AEO, GEO and growth systems built for complex, knowledge-intensive brands.',
   publisher: { '@id': `${SITE_URL}/#person` },
   inLanguage: 'en',
 };
@@ -101,12 +117,12 @@ const professionalServiceSchema = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
   '@id': `${SITE_URL}/#service`,
-  name: 'AI Visibility & Growth Strategy — Vinod Kumaran',
+  name: 'AEO & GEO Expert Services — AI Search Visibility for Healthcare',
   description:
-    'AI visibility, AEO, GEO and growth systems for complex brands. Making brands discoverable across ChatGPT, Claude, Gemini and Perplexity.',
+    'AEO, GEO and AI Search visibility services for Healthcare, Life Sciences, Diagnostics, Biotechnology, Pharmaceuticals, Medical Devices, Clinical Research, Precision Medicine and Scientific AI. Making complex brands discoverable across ChatGPT, Claude, Gemini and Perplexity.',
   provider: { '@id': `${SITE_URL}/#person` },
   areaServed: 'Global',
-  serviceType: ['AI Visibility', 'AEO', 'GEO', 'Generative Search Optimization', 'Organic SEO', 'AI Citation Setup', 'Growth Systems'],
+  serviceType: ['AEO', 'GEO', 'AI Search Visibility', 'Generative Search Optimization', 'Organic SEO', 'AI Citation Setup', 'Growth Systems', 'Healthcare Digital Marketing', 'Life Sciences Marketing', 'Diagnostics Marketing', 'Biotechnology Marketing', 'Pharmaceuticals Marketing', 'Medical Devices Marketing', 'Clinical Research Marketing', 'Precision Medicine Marketing', 'Genomics Marketing', 'Proteomics Marketing', 'Scientific AI Marketing'],
   offers: {
     '@type': 'Offer',
     description: 'Book a 30-minute strategy meeting to discuss your AI visibility and growth challenges.',
@@ -190,6 +206,9 @@ const breadcrumbSchema = {
   ],
 };
 
+const GA_MEASUREMENT_ID = 'G-F4JDS1FQL8';
+const CLARITY_ID = 'ylfgjmcelf';
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
@@ -197,6 +216,21 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
+        <meta name="google-site-verification" content="vNN9ti6yXM87cCO212MjDeHKpT22DOJieV0KP5hivnc" />
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_MEASUREMENT_ID}');`,
+          }}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","${CLARITY_ID}");`,
+          }}
         />
         <script
           type="application/ld+json"
@@ -214,18 +248,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
-<meta name="google-site-verification" content="vNN9ti6yXM87cCO212MjDeHKpT22DOJieV0KP5hivnc" />
-        
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-F4JDS1FQL8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-F4JDS1FQL8');
-</script>
-        
       </head>
       <body className={inter.className}>{children}</body>
     </html>
