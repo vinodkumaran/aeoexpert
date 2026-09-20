@@ -248,6 +248,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
+
+        <meta name="google-site-verification" content="vNN9ti6yXM87cCO212MjDeHKpT22DOJieV0KP5hivnc" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
