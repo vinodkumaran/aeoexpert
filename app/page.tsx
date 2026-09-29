@@ -132,8 +132,8 @@ export default function Home() {
       <section className="hero section-shell" id="top">
         <div className="hero-copy">
           <p className="eyebrow"><span className="eyebrow-line" /> Digital strategist · AEO &amp; GEO pioneer</p>
-          <div className="hire-badge"><span className="hire-pulse" /> Available for full time remote job</div>
-          <h1>Open to Hire<br /><em>$120K<span className="hire-suffix">/yr</span></em></h1>
+          <div className="hire-badge"><span className="hire-pulse" /> Book an appointment</div>
+          <h1>Contact me for<br /><em>Free Consultation</em></h1>
           <p className="hero-intro">I build visibility for brands in the age of AI — bringing together 17+ years of organic search, AEO, content and growth. One of the top pioneers adapting and executing AEO projects.</p>
           <div className="hero-actions">
             <a className="button button-dark" href={bookingUrl} target="_blank" rel="noreferrer">Book a meeting <ArrowUpRight size={17} /></a>
