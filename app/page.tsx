@@ -133,8 +133,8 @@ export default function Home() {
         <div className="hero-copy">
           <p className="eyebrow"><span className="eyebrow-line" /> Digital strategist · AEO &amp; GEO pioneer</p>
           <div className="hire-badge"><span className="hire-pulse" /> Book an appointment</div>
-          <h1>I have two<br /><em>slots left</em></h1>
-          <p className="hero-intro">I build visibility for brands in the age of AI — bringing together 17+ years of organic search, AEO, content and growth. One of the top pioneers adapting and executing AEO projects.</p>
+          <h1>Be the Brand<br /><em>ChatGPT Recommends</em></h1>
+          <p className="hero-intro">When customers ask ChatGPT, does your BRAND show up? or your competitor’s?<br />Don’t lose the recommendation. Own your AI visibility.</p>
           <div className="hero-actions">
             <a className="button button-dark" href={bookingUrl} target="_blank" rel="noreferrer">Book a meeting <ArrowUpRight size={17} /></a>
             <a className="phone-cta" href="tel:+12063855255"><Phone size={20} /><span>Call +1 206 385 5255</span><ArrowUpRight size={17} /></a>
