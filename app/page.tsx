@@ -23,7 +23,7 @@ import {
   Target,
   X,
 } from 'lucide-react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const bookingUrl = 'https://cal.com/vinodkumaran/30min';
 
@@ -79,6 +79,24 @@ const navigationItems = [
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const aiPlatforms = ['ChatGPT', 'Claude', 'Gemini', 'Grok'];
+  const [platformIndex, setPlatformIndex] = useState(0);
+  const [platformVisible, setPlatformVisible] = useState(true);
+
+  useEffect(() => {
+    let swapTimer: ReturnType<typeof setTimeout>;
+    const cycle = setInterval(() => {
+      setPlatformVisible(false);
+      swapTimer = setTimeout(() => {
+        setPlatformIndex((i) => (i + 1) % aiPlatforms.length);
+        setPlatformVisible(true);
+      }, 600);
+    }, 2600);
+    return () => {
+      clearInterval(cycle);
+      clearTimeout(swapTimer);
+    };
+  }, [aiPlatforms.length]);
 
   return (
     <main>
@@ -133,8 +151,8 @@ export default function Home() {
         <div className="hero-copy">
           <p className="eyebrow"><span className="eyebrow-line" /> Digital strategist · AEO &amp; GEO pioneer</p>
           <div className="hire-badge"><span className="hire-pulse" /> Book an appointment</div>
-          <h1>Be the Brand<br /><em>ChatGPT Recommends</em></h1>
-          <p className="hero-intro">When customers ask ChatGPT, does your BRAND show up? or your competitor’s?<br />Don’t lose the recommendation. Own your AI visibility.</p>
+          <h1>I Work on AEO Projects &amp; Get Your Brand on<br /><em className={platformVisible ? 'ai-rotator is-visible' : 'ai-rotator'} aria-live="polite">{aiPlatforms[platformIndex]}</em></h1>
+          <p className="hero-intro">When customers ask ChatGPT, does your BRAND show up? or your competitor’s?</p>
           <div className="hero-actions">
             <a className="button button-dark" href={bookingUrl} target="_blank" rel="noreferrer">Book a meeting <ArrowUpRight size={17} /></a>
             <a className="phone-cta" href="tel:+12063855255"><Phone size={20} /><span>Call +1 206 385 5255</span><ArrowUpRight size={17} /></a>

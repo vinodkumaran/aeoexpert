@@ -382,3 +382,7 @@ h2 { font-size: clamp(34px, 5.3vw, 74px); margin-bottom: 0; }
   .footer { align-items: flex-start; flex-direction: column; gap: 14px; padding: 22px 0; font-size: 8px; }
   .footer .brand { font-size: 12px; }
 }
+
+.ai-rotator { display: inline-block; opacity: 0; filter: blur(6px); transition: opacity .6s ease, filter .6s ease; }
+.ai-rotator.is-visible { opacity: 1; filter: blur(0); }
+@media (prefers-reduced-motion: reduce) { .ai-rotator { transition: none; filter: none; } }
