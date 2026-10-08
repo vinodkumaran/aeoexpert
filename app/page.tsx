@@ -90,8 +90,8 @@ export default function Home() {
       swapTimer = setTimeout(() => {
         setPlatformIndex((i) => (i + 1) % aiPlatforms.length);
         setPlatformVisible(true);
-      }, 600);
-    }, 2600);
+      }, 300);
+    }, 1000);
     return () => {
       clearInterval(cycle);
       clearTimeout(swapTimer);
@@ -151,7 +151,7 @@ export default function Home() {
         <div className="hero-copy">
           <p className="eyebrow"><span className="eyebrow-line" /> Digital strategist · AEO &amp; GEO pioneer</p>
           <div className="hire-badge"><span className="hire-pulse" /> Book an appointment</div>
-          <h1>I Work on AEO Projects &amp; Get Your Brand on<br /><em className={platformVisible ? 'ai-rotator is-visible' : 'ai-rotator'} aria-live="polite">{aiPlatforms[platformIndex]}</em></h1>
+          <h1>I Work on AEO Projects &amp; Get Your <strong className="hero-gold">Brand</strong> on<br /><em className={platformVisible ? 'ai-rotator hero-gold is-visible' : 'ai-rotator hero-gold'} aria-live="polite">{aiPlatforms[platformIndex]}</em></h1>
           <p className="hero-intro">When customers ask ChatGPT, does your BRAND show up? or your competitor’s?</p>
           <div className="hero-actions">
             <a className="button button-dark" href={bookingUrl} target="_blank" rel="noreferrer">Book a meeting <ArrowUpRight size={17} /></a>
