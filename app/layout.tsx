@@ -1,8 +1,9 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Cormorant_Garamond, Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] });
+const luxury = Cormorant_Garamond({ subsets: ['latin'], weight: ['300', '500'], style: ['normal', 'italic'], variable: '--font-luxury' });
 
 const SITE_URL = 'https://vinodkumaran.com';
 
@@ -251,7 +252,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         <meta name="google-site-verification" content="vNN9ti6yXM87cCO212MjDeHKpT22DOJieV0KP5hivnc" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} ${luxury.variable}`}>{children}</body>
     </html>
   );
 }
