@@ -83,7 +83,7 @@ const personSchema = {
   ],
   nationality: 'Indian',
   address: { '@type': 'PostalAddress', addressCountry: 'IN' },
-  telephone: '+1-206-385-5255',
+  telephone: '+91-98845-39305',
   sameAs: ['https://cal.com/vinodkumaran/30min'],
   worksFor: {
     '@type': 'Organization',
@@ -131,7 +131,7 @@ const professionalServiceSchema = {
     availability: 'https://schema.org/InStock',
   },
   url: SITE_URL,
-  telephone: '+1-206-385-5255',
+  telephone: '+91-98845-39305',
 };
 
 const faqSchema = {
@@ -192,7 +192,7 @@ const faqSchema = {
       name: 'How can I book a meeting with Vinod Kumaran?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'You can book a 30-minute strategy meeting directly at cal.com/vinodkumaran/30min, or call +1 206 385 5255. Whether you have a complex growth challenge or want to understand what AI Search means for your brand, book a meeting to start the conversation.',
+        text: 'You can book a 30-minute strategy meeting directly at cal.com/vinodkumaran/30min, or call +91 98845 39305. Whether you have a complex growth challenge or want to understand what AI Search means for your brand, book a meeting to start the conversation.',
       },
     },
   ],

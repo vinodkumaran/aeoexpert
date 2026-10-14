@@ -107,7 +107,7 @@ export default function Home() {
           <span className="brand-name">Vinod Kumaran</span>
         </a>
         <div className="header-actions">
-          <a className="header-phone" href="tel:+12063855255" aria-label="Call Vinod Kumaran"><Phone size={17} /><span>+1 206 385 5255</span></a>
+          <a className="header-phone" href="tel:+919884539305" aria-label="Call Vinod Kumaran"><Phone size={17} /><span>+91 98845 39305</span></a>
           <a className="header-booking" href={bookingUrl} target="_blank" rel="noreferrer" aria-label="Book a meeting"><CalendarCheck2 size={17} /><span>Book a meeting</span></a>
           <button className={menuOpen ? 'menu-toggle is-open' : 'menu-toggle'} type="button" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle navigation" aria-expanded={menuOpen}>
             {menuOpen ? <X size={21} /> : <Menu size={21} />}
@@ -155,7 +155,7 @@ export default function Home() {
           <p className="hero-intro">When customers ask ChatGPT, does your BRAND show up? or your competitor’s?</p>
           <div className="hero-actions">
             <a className="button button-dark" href={bookingUrl} target="_blank" rel="noreferrer">Book a meeting <ArrowUpRight size={17} /></a>
-            <a className="phone-cta" href="tel:+12063855255"><Phone size={20} /><span>Call +1 206 385 5255</span><ArrowUpRight size={17} /></a>
+            <a className="phone-cta" href="tel:+919884539305"><Phone size={20} /><span>Call +91 98845 39305</span><ArrowUpRight size={17} /></a>
             <a className="text-link" href="#work">Explore my strategy <ArrowDownRight size={16} /></a>
           </div>
           <div className="hero-meta"><span>01</span><span className="meta-rule" /><span>Digital marketing · AEO · GEO · AI Search</span></div>
