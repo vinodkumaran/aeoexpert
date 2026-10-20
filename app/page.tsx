@@ -150,7 +150,7 @@ export default function Home() {
       <section className="hero section-shell" id="top">
         <div className="hero-copy">
           <p className="eyebrow"><span className="eyebrow-line" /> Digital strategist · AEO &amp; GEO pioneer</p>
-          <div className="hire-badge"><span className="hire-pulse" /> Book an appointment</div>
+          <div className="hire-badge"><span className="hire-pulse" /> Search strategist since 2009</div>
           <h1 className="hero-title-lux">I Work on AEO Projects &amp; Get Your <strong className="hero-gold">Brand</strong> on<br /><em className={platformVisible ? 'ai-rotator hero-gold is-visible' : 'ai-rotator hero-gold'} aria-live="polite">{aiPlatforms[platformIndex]}</em></h1>
           <p className="hero-intro">When customers ask ChatGPT, does your BRAND show up? or your competitor’s?</p>
           <div className="hero-actions">
