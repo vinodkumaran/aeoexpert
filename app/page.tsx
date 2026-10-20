@@ -2,6 +2,7 @@
 
 import {
   ArrowDownRight,
+  Linkedin,
   ArrowUpRight,
   BedDouble,
   BrainCircuit,
@@ -155,7 +156,7 @@ export default function Home() {
           <p className="hero-intro">When customers ask ChatGPT, does your BRAND show up? or your competitor’s?</p>
           <div className="hero-actions">
             <a className="button button-dark" href={bookingUrl} target="_blank" rel="noreferrer">Book a meeting <ArrowUpRight size={17} /></a>
-            <a className="phone-cta" href="tel:+919884539305"><Phone size={20} /><span>Call +91 98845 39305</span><ArrowUpRight size={17} /></a>
+            <a className="phone-cta" href="https://www.linkedin.com/in/vinodkumaran/" target="_blank" rel="noreferrer"><Linkedin size={20} /><span>Follow me on LinkedIn</span><ArrowUpRight size={17} /></a>
             <a className="text-link" href="#work">Explore my strategy <ArrowDownRight size={16} /></a>
           </div>
           <div className="hero-meta"><span>01</span><span className="meta-rule" /><span>Digital marketing · AEO · GEO · AI Search</span></div>
