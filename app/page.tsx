@@ -6,25 +6,18 @@ import {
   ArrowUpRight,
   BedDouble,
   BrainCircuit,
-  BriefcaseBusiness,
-  CalendarCheck2,
   Check,
   ChevronRight,
   CircleArrowOutUpRight,
   Crosshair,
-  Home as HomeIcon,
-  Images,
-  Layers3,
-  Mail,
-  Menu,
   Network,
-  Phone,
   Search,
   Sparkles,
   Target,
-  X,
 } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import SiteHeader from '@/components/site-header';
+import SiteFooter from '@/components/site-footer';
 
 const bookingUrl = 'https://cal.com/vinodkumaran/30min';
 
@@ -70,16 +63,8 @@ const framework = [
 
 const industries = ['Healthcare', 'Pharma', 'Life Sciences', 'Diagnostics', 'Biotechnology', 'MedTech'];
 
-const navigationItems = [
-  { label: 'Home', description: 'Discover the full picture', href: '#top', icon: HomeIcon },
-  { label: 'Expertise', description: 'How I create momentum', href: '#expertise', icon: BriefcaseBusiness },
-  { label: 'Work', description: 'Selected growth systems', href: '#work', icon: Layers3 },
-  { label: 'Framework', description: 'The visibility framework', href: '#framework', icon: Images },
-  { label: 'Contact', description: 'Start a conversation', href: '#contact', icon: Mail },
-];
 
 export default function Home() {
-  const [menuOpen, setMenuOpen] = useState(false);
   const aiPlatforms = ['ChatGPT', 'Claude', 'Gemini', 'Grok'];
   const [platformIndex, setPlatformIndex] = useState(0);
   const [platformVisible, setPlatformVisible] = useState(true);
@@ -101,41 +86,7 @@ export default function Home() {
 
   return (
     <main>
-      <header className="site-header">
-       <div className="header-inner">
-        <a className="brand" href="#top" aria-label="Vinod Kumaran home">
-          <span className="brand-mark">VK</span>
-          <span className="brand-name">Vinod Kumaran</span>
-        </a>
-        <div className="header-actions">
-          <a className="header-phone" href="tel:+919884539305" aria-label="Call Vinod Kumaran"><Phone size={17} /><span>+91 98845 39305</span></a>
-          <a className="header-booking" href={bookingUrl} target="_blank" rel="noreferrer" aria-label="Book a meeting"><CalendarCheck2 size={17} /><span>Book a meeting</span></a>
-          <button className={menuOpen ? 'menu-toggle is-open' : 'menu-toggle'} type="button" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle navigation" aria-expanded={menuOpen}>
-            {menuOpen ? <X size={21} /> : <Menu size={21} />}
-          </button>
-        </div>
-        {menuOpen && <div className="nav-backdrop" onClick={() => setMenuOpen(false)} />}
-        <nav className={menuOpen ? 'main-nav is-open' : 'main-nav'} aria-label="Main navigation">
-          <div className="nav-desktop-links">
-            {['About', 'Expertise', 'Work', 'Framework', 'Journal'].map((item) => (
-              <a key={item} href={`#${item.toLowerCase()}`} onClick={() => setMenuOpen(false)}>{item}</a>
-            ))}
-          </div>
-          <a className="nav-cta nav-desktop-cta" href={bookingUrl} target="_blank" rel="noreferrer">Let&apos;s talk <ArrowUpRight size={15} /></a>
-          <p className="nav-heading">Navigation</p>
-          <div className="nav-items">
-            {navigationItems.map(({ label, description, href, icon: Icon }) => (
-              <a className="nav-item" key={label} href={href} onClick={() => setMenuOpen(false)}>
-                <span className="nav-item-icon"><Icon size={22} strokeWidth={1.7} /></span>
-                <span className="nav-item-copy"><strong>{label}</strong><small>{description}</small></span>
-                <ArrowUpRight className="nav-item-arrow" size={19} />
-              </a>
-            ))}
-          </div>
-          <a className="nav-cta nav-mobile-cta" href={bookingUrl} target="_blank" rel="noreferrer"><CalendarCheck2 size={16} /> Let&apos;s talk <ArrowUpRight size={15} /></a>
-        </nav>
-       </div>
-      </header>
+      <SiteHeader />
 
       <section className="reference-cards section-shell" aria-label="Featured capabilities">
         <a className="reference-card" href="#work">
@@ -276,7 +227,7 @@ export default function Home() {
 
       <section className="contact-section" id="contact"><div className="section-shell contact-content"><div className="section-label light-label"><span>10</span><span className="label-rule" /><span>Let&apos;s work together</span></div><h2>Build visibility<br /><em>that compounds.</em></h2><p>I will do the GEO/AEO and AI Citation Setup for your brand. Have a complex growth challenge, or want to understand what AI Search means for your brand?</p><a className="contact-link" href={bookingUrl} target="_blank" rel="noreferrer">Book a meeting <ArrowUpRight size={20} /></a></div></section>
 
-      <footer className="footer section-shell"><a className="brand" href="#top"><span className="brand-mark">VK</span><span className="brand-name">Vinod Kumaran</span></a><p>From search visibility to AI visibility.</p><span>© 2026 Vinod Kumaran</span></footer>
+      <SiteFooter />
     </main>
   );
 }
