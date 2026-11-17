@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import { ArrowUpRight, Linkedin } from 'lucide-react';
 import SiteHeader from '@/components/site-header';
 import SiteFooter from '@/components/site-footer';
@@ -20,6 +21,16 @@ export default function SaasExperiencePage() {
       <section className="experience-hero section-shell">
         <p className="eyebrow"><span className="eyebrow-line" /> My Experience</p>
         <h1 className="hero-title-lux">SaaS</h1>
+        <figure className="experience-hero-banner">
+          <Image
+            src="/experience/saas/hero-aeo.webp"
+            alt="Does ChatGPT list your SaaS as the best tool? Vinod Kumaran · AEO"
+            width={1200}
+            height={627}
+            sizes="(max-width: 720px) 100vw, 680px"
+            priority
+          />
+        </figure>
         <p className="experience-lead">
           From January 2016 to February 2017 I was SEO Analyst at Caddycode Solutions, a software company whose SaaS product, 6Storage, is a self-storage management platform. I planned and ran performance marketing for the product, worked with the product team so marketing stayed aligned with product improvements, and planned professional content and media outreach.
         </p>
@@ -79,8 +90,8 @@ export default function SaasExperiencePage() {
 
       <section className="experience-cta section-shell">
         <div className="section-label"><span>03</span><span className="label-rule" /><span>Let&apos;s talk</span></div>
-        <h2>Want to talk about demand generation for a SaaS product?</h2>
-        <p>I&apos;m happy to walk through how search, product-aware messaging and content outreach work together when you are building software subscriptions.</p>
+        <h2>When buyers ask ChatGPT for the best tool in your category, does your product make the list?</h2>
+        <p>I help SaaS brands get cited and recommended in AI answers across ChatGPT, Gemini, Claude and Grok.</p>
         <a className="button button-dark" href={linkedInUrl} target="_blank" rel="noreferrer">
           <Linkedin size={18} /> Follow me on LinkedIn <ArrowUpRight size={17} />
         </a>

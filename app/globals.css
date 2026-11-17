@@ -399,6 +399,8 @@ h2 { font-size: clamp(34px, 5.3vw, 74px); margin-bottom: 0; }
 .experience-page { background: var(--bg, #f6f1e8); color: var(--ink); }
 .experience-hero { padding: 140px 0 70px; }
 .experience-hero h1 { margin: 18px 0 22px; font-size: clamp(52px, 8vw, 96px); }
+.experience-hero-banner { margin: 6px 0 32px; max-width: 680px; }
+.experience-hero-banner img { width: 100%; height: auto; display: block; border: 1px solid rgba(24, 53, 45, .14); box-shadow: 0 12px 32px rgba(15, 42, 34, .12); background: #0f2a22; }
 .experience-lead { max-width: 680px; margin: 0 0 28px; font-size: 20px; line-height: 1.5; color: #3d4a44; }
 .experience-section { padding: 30px 0 70px; }
 .experience-section h2 { max-width: 720px; margin: 28px 0 28px; font-family: Georgia, serif; font-size: clamp(32px, 4.5vw, 52px); font-weight: 400; line-height: 1.1; }

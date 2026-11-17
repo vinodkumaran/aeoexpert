@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import { ArrowUpRight, Linkedin } from 'lucide-react';
 import SiteHeader from '@/components/site-header';
 import SiteFooter from '@/components/site-footer';
@@ -20,6 +21,16 @@ export default function LogisticsExperiencePage() {
       <section className="experience-hero section-shell">
         <p className="eyebrow"><span className="eyebrow-line" /> My Experience</p>
         <h1 className="hero-title-lux">Logistics</h1>
+        <figure className="experience-hero-banner">
+          <Image
+            src="/experience/logistics/hero-aeo.webp"
+            alt="When shoppers ask AI how to ship US to India, whose name comes up? Vinod Kumaran · AEO"
+            width={1200}
+            height={627}
+            sizes="(max-width: 720px) 100vw, 680px"
+            priority
+          />
+        </figure>
         <p className="experience-lead">
           From 2016 to 2017 I ran digital marketing for ShopUSA, a cross-border shopping and shipping service. Customers shop from US retailers, send purchases to a US warehouse address, and have those goods shipped on to their own country. I prepared the Global SEO proposal, ran Google Search campaigns, and wrote a search, content and analytics strategy for the service.
         </p>
@@ -79,8 +90,8 @@ export default function LogisticsExperiencePage() {
 
       <section className="experience-cta section-shell">
         <div className="section-label"><span>03</span><span className="label-rule" /><span>Let&apos;s talk</span></div>
-        <h2>Want to talk about demand generation for a logistics or cross-border shipping brand?</h2>
-        <p>I&apos;m happy to walk through how search, content and a clear analytics rhythm work together when you are building sign-ups for a shopping and shipping service.</p>
+        <h2>When shoppers ask AI how to ship from the US to India, whose name comes up?</h2>
+        <p>I help logistics and cross-border brands become the answer that ChatGPT, Gemini, Claude and Grok recommend.</p>
         <a className="button button-dark" href={linkedInUrl} target="_blank" rel="noreferrer">
           <Linkedin size={18} /> Follow me on LinkedIn <ArrowUpRight size={17} />
         </a>

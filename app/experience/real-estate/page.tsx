@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import { ArrowUpRight, Linkedin } from 'lucide-react';
 import SiteHeader from '@/components/site-header';
 import SiteFooter from '@/components/site-footer';
@@ -20,6 +21,16 @@ export default function RealEstateExperiencePage() {
       <section className="experience-hero section-shell">
         <p className="eyebrow"><span className="eyebrow-line" /> My Experience</p>
         <h1 className="hero-title-lux">Real Estate</h1>
+        <figure className="experience-hero-banner">
+          <Image
+            src="/experience/real-estate/hero-aeo.webp"
+            alt="Is ChatGPT recommending your project to NRI buyers? Vinod Kumaran · AEO"
+            width={1200}
+            height={627}
+            sizes="(max-width: 720px) 100vw, 680px"
+            priority
+          />
+        </figure>
         <p className="experience-lead">
           From February 2017 to September 2021 I was Digital Marketing Manager at Express Infrastructure Private Limited, part of the Indian Express Group. I led digital marketing for the group&apos;s premium residential project, E Residences, which was also marketed as Express Exclusive. Between 2018 and 2020 I generated NRI leads and drove conversions for the project.
         </p>
@@ -94,8 +105,8 @@ export default function RealEstateExperiencePage() {
 
       <section className="experience-cta section-shell">
         <div className="section-label"><span>03</span><span className="label-rule" /><span>Let&apos;s talk</span></div>
-        <h2>Want to talk about demand generation for a real estate brand?</h2>
-        <p>I&apos;m happy to walk through how search, paid media and a disciplined CRM process work together on a residential project, including reaching NRI buyers.</p>
+        <h2>Is ChatGPT recommending your project to NRI buyers, or your competitor&apos;s?</h2>
+        <p>I help real estate brands show up in AI answers on ChatGPT, Gemini, Claude and Grok, where buyers now shortlist before they ever call.</p>
         <a className="button button-dark" href={linkedInUrl} target="_blank" rel="noreferrer">
           <Linkedin size={18} /> Follow me on LinkedIn <ArrowUpRight size={17} />
         </a>
