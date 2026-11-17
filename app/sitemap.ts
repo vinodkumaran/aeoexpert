@@ -18,7 +18,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/experience/saas-ecommerce`,
+      url: `${baseUrl}/experience/saas`,
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/experience/logistics`,
       lastModified,
       changeFrequency: 'monthly',
       priority: 0.8,

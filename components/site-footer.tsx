@@ -9,7 +9,8 @@ export default function SiteFooter() {
       <nav className="footer-experience" aria-label="My Experience">
         <p className="footer-experience-heading">My Experience</p>
         <a href="/experience/real-estate">Real Estate</a>
-        <a href="/experience/saas-ecommerce">SaaS &amp; Ecommerce</a>
+        <a href="/experience/saas">SaaS</a>
+        <a href="/experience/logistics">Logistics</a>
       </nav>
       <span>&copy; 2026 Vinod Kumaran</span>
     </footer>
