@@ -437,3 +437,11 @@ figcaption { margin-top: 10px; font-size: 13px; color: #7d8982; line-height: 1.4
   .metric-grid, .channel-grid, .analytics-grid { grid-template-columns: 1fr; }
   .footer-experience { width: 100%; }
 }
+
+.experience-timeline { list-style: none; margin: 0 0 32px; padding: 0; max-width: 680px; border-top: 1px solid var(--line); }
+.experience-timeline li { display: grid; grid-template-columns: 130px 1fr; gap: 18px; align-items: baseline; margin: 0; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.experience-timeline time { color: var(--gold); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; font-weight: 600; }
+.experience-timeline span { font-size: 16px; color: #3d4a44; }
+@media (max-width: 560px) {
+  .experience-timeline li { grid-template-columns: 1fr; gap: 4px; padding: 12px 0; }
+}
