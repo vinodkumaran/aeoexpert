@@ -216,7 +216,8 @@ h2 { font-size: clamp(34px, 5.3vw, 74px); margin-bottom: 0; }
 .footer p { margin: 0; }
 .footer-experience { text-transform: none; letter-spacing: 0; min-width: 140px; }
 .footer-experience-heading { margin: 0 0 6px; font-size: 10px; letter-spacing: .06em; text-transform: uppercase; color: #7d8982; }
-.footer-experience a { color: var(--ink); font-size: 13px; letter-spacing: -.01em; }
+.footer-experience a { display: block; color: var(--ink); font-size: 13px; letter-spacing: -.01em; }
+.footer-experience a + a { margin-top: 4px; }
 .footer-experience a:hover { color: var(--gold); }
 
 @media (max-width: 1100px) {
